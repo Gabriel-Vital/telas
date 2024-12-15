@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.container .navegacao {
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container .navegacao img {
+    display: flex;
+    align-items: center;
+}
+
+.container .navegacao .logo {
+    display: flex;
+}
+
+.container .navegacao .logo b {
+    display: flex;
+    align-items: center;
+}
+
+.container .navegacao .botoes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container .navegacao .botoes ul {
+    display: flex;
+    gap: 13px;
+}
+
+.container .navegacao .botoes ul button{
+    padding: 5px;
+    border: transparent;
+    background-color: white;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.container .navegacao .botoes ul button:hover{
+    background-color: #cecece;
+}
+
+.container .navegacao .botoes .pesquisa{
+    display: flex;
+    margin: 0px 75px;
+}
+
+.container .navegacao .botoes .pesquisa button {
+    padding: 7px;
+    border-radius: 47%;
+    border: transparent;
+    background-color: white;
+    font-size: larger;
+    transition: all 500ms ease;
+}
+
+.container .navegacao .botoes .pesquisa button:hover{
+    background-color: #cecece;
+}
+
+.container .corpo {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.container .corpo .esquerda {
+    width: 39%;
+    height: 90%;
+}
+
+.container .corpo .direita {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .corpo .direita .secao-1 span {
+    background-color: #FDCB2F;
+    padding: 8px;
+    border-radius: 45px;
+    color: white;
+}
+
+
+#botao1{
+    background-color: #FDCB2F;
+    padding: 8px;
+    border-radius: 8px;
+    border: transparent;
+}
+
+
+#botao2 {
+    border: transparent;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+#botao1 a{
+    color: white;
+}
+
+#botao2 a{
+    color: #fbc010;
+}
+
+.container .fim {
+    display: flex;
+    height: 6%;
+}
+
+.container .fim .esquerda {
+    width: 45%;
+}
+
+.container .fim .direita {
+    padding: 2px 30px;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .fim .direita .redes {
+    display: flex;
+    gap: 15px;
+}
+
+.container .fim .direita .redes button {
+    padding: 8px;
+    display: flex;
+    border: transparent;
+    border-radius: 50%;
+    font-size: 22px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.container .fim .direita .redes button:hover {
+    background-color: #cecece;
+}

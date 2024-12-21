@@ -36,6 +36,7 @@ body {
 }
 
 a {
+    font-weight: bold;
     color: black;
     text-decoration: none;
 }
@@ -59,15 +60,16 @@ a {
 
 .container .navegacao .botoes .pesquisa{
     display: flex;
-    margin: 0px 75px;
+    margin: 0px 50px;
 }
 
 .container .navegacao .botoes .pesquisa button {
     padding: 7px;
-    border-radius: 47%;
+    border-radius: 50%;
     border: transparent;
     background-color: white;
     font-size: larger;
+    cursor: pointer;
     transition: all 500ms ease;
 }
 
@@ -81,7 +83,7 @@ a {
     gap: 60px;
 }
 .container .corpo .esquerda {
-    width: 39%;
+    width: 38%;
     height: 90%;
 }
 
@@ -104,26 +106,36 @@ a {
 
 #botao1{
     background-color: #FDCB2F;
-    padding: 8px;
+    padding: 10px;
+    color: white;
     border-radius: 8px;
-    border: transparent;
+    border: transparent solid 1px;
+    transition: all 400ms ease;
+    cursor: pointer;
 }
 
+#botao1:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: #000000 solid 1px;
+}
 
 #botao2 {
-    border: transparent;
-    padding: 8px;
+    border: transparent solid 1px;
+    color: #d8a304;
+    padding: 10px;
     border-radius: 8px;
     background-color: white;
+    cursor: pointer;
+    transition: all 400ms ease;
 }
 
-#botao1 a{
-    color: white;
+#botao2:hover{
+    color: rgb(0, 0, 0);
+    background-color: #FDCB2F;
+    border: #000000 solid 1px;
 }
 
-#botao2 a{
-    color: #fbc010;
-}
 
 .container .fim {
     display: flex;
@@ -144,7 +156,7 @@ a {
 
 .container .fim .direita .redes {
     display: flex;
-    gap: 15px;
+    gap: 5px;
 }
 
 .container .fim .direita .redes button {

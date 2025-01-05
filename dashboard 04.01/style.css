@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(101, 100, 100);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.1s ease;
+}
+
+a:hover {
+    color: #FDCB2F;
+}
+
+a i {
+    font-size: large;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.container header .barra_pesquisa {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c4c3c3;
+    padding-left: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    height: 30px;
+}
+.container header .barra_pesquisa input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.container header .barra_pesquisa i {
+    color: #FDCB2F;
+}
+
+.container header .atalhos button {
+    border: none;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.container header .atalhos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container header .atalhos img {
+    padding: 2px;
+    display: flex;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #e6d29b, #2eb827, #703751, #9c5cb5, #313558);
+}
+
+.container header .atalhos button i {
+    font-size: 20px;
+    color: #FDCB2F;
+}
+
+.container .principal {
+    display: flex;
+    background-color: #f9fafb;
+    width: 100%;
+    height: 100%;
+}
+
+.container .principal aside {
+    background-color: white;
+    width: 20%;
+    height: 100%;
+
+}
+
+.container .principal main {
+    width: 80%;
+    height: 100%;
+}
+
+.container .principal aside .menu button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.container .principal aside nav ul .pages a .esquerda{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .principal aside nav ul .pages button a {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+
+.container .principal aside .create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .principal aside .create button {
+    background-color: #FDCB2F;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.container .principal aside .create button:hover {
+    background-color: #f9fafb;
+    color: #FDCB2F;
+    border: #FDCB2F 1px solid;
+}
+
+.container .principal main .conteudo {
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .principal main .git {
+    display: flex;
+    justify-content: space-between;
+    background-color: #cb49fa;
+    border-radius: 5px;
+    padding-right: 15px;
+    color: white;
+    padding-left: 15px;
+    align-items: center;
+}
+
+.container .principal main .git button {
+    background-color: tra;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 13px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.container .principal main .dados ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .principal main .dados ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid #dedddd;
+    background-color: white;
+    padding-inline: 13px;
+    border-radius: 5px;
+}
+
+.container .principal main .dados ul li i {
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.container .principal main .dados ul li .icon1 i {
+    background-color: #f6de94;
+    color: #d3b016;
+}
+
+.container .principal main .dados ul li .icon2 i {
+    background-color: rgb(151, 255, 220);
+    color: #1eb375;
+}
+
+.container .principal main .dados ul li .icon3 i {
+    background-color: #b2cbf6;
+    color: #107dd7;
+}
+
+.container .principal main .dados ul li .icon4 i {
+    background-color: #f6b2b2;
+    color: #d71010;
+}
+
+.container .principal main .clientes ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .principal main .clientes ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dedddd;
+    padding: 5px;
+    padding-right: 100px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.container .principal main .clientes ul li .clientes {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .principal main .clientes ul li .clientes i {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #c8c6c6;
+}
+
+.container .principal main .clientes ul li .clientes .user {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container .principal main .clientes ul li .descrição {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .principal main .clientes ul .titulo {
+    font-weight: bold;
+    color: #7b7979;
+}
+

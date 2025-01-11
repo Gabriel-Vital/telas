@@ -15,6 +15,10 @@ body {
     padding: 10px;
 }
 
+.container .navegacao .menu {
+    display: none;
+}
+
 .container .navegacao img {
     display: flex;
     align-items: center;
@@ -78,13 +82,15 @@ a {
 }
 
 .container .corpo {
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 60px;
 }
 .container .corpo .esquerda {
     width: 38%;
-    height: 90%;
+    height: 80%;
 }
 
 .container .corpo .direita {
@@ -140,6 +146,10 @@ a {
 .container .fim {
     display: flex;
     height: 6%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .container .fim .esquerda {

@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 ul {
@@ -99,14 +98,18 @@ a i {
     background-color: #f9fafb;
     width: 100%;
     height: 100%;
-    padding-top: 80px;
+    padding-top: 85px;
+    padding-left: 45px;
+    justify-content: end;
 }
 
 .container .principal aside {
     background-color: white;
     width: 20%;
     height: 100%;
-
+    position: fixed;
+    left: 0;
+    top: 85px;
 }
 
 .container .principal main {
@@ -114,14 +117,31 @@ a i {
     height: 100%;
 }
 
+.container .principal aside nav ul {
+    padding: 0;
+}
+
 .container .principal aside .menu button {
     width: 100%;
-    padding: 8px;
+    padding: 8px 20px;
     border: none;
     background-color: transparent;
     display: flex;
     gap: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.container .principal aside .menu button:hover {
     font-weight: bold;
+    background-color: #f6f5f5;
+}
+
+#ativo {
+    font-weight: bold;
+    border-left: 5px solid #cb49fa;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .container .principal aside nav ul .pages a .esquerda{
@@ -148,7 +168,7 @@ a i {
     background-color: #FDCB2F;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 20px;
@@ -159,6 +179,10 @@ a i {
     background-color: #f9fafb;
     color: #FDCB2F;
     border: #FDCB2F 1px solid;
+}
+
+.container .principal main {
+    background-color: #f9f8f8;
 }
 
 .container .principal main .conteudo {
@@ -181,7 +205,6 @@ a i {
 }
 
 .container .principal main .git button {
-    background-color: tra;
     border: 1px solid transparent;
     color: white;
     border-radius: 10px;
@@ -196,6 +219,7 @@ a i {
 }
 
 .container .principal main .dados ul {
+    padding: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -203,12 +227,13 @@ a i {
 .container .principal main .dados ul li {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 25px;
     border: 1px solid #dedddd;
     background-color: white;
-    padding-inline: 13px;
+    padding-inline: 40px;
     border-radius: 5px;
+
 }
 
 .container .principal main .dados ul li i {
@@ -234,51 +259,5 @@ a i {
 .container .principal main .dados ul li .icon4 i {
     background-color: #f6b2b2;
     color: #d71010;
-}
-
-.container .principal main .clientes ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.container .principal main .clientes ul li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #dedddd;
-    padding: 5px;
-    padding-right: 100px;
-    border-radius: 10px;
-    padding-left: 10px;
-}
-
-.container .principal main .clientes ul li .clientes {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.container .principal main .clientes ul li .clientes i {
-    border-radius: 50%;
-    padding: 10px;
-    background-color: #c8c6c6;
-}
-
-.container .principal main .clientes ul li .clientes .user {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.container .principal main .clientes ul li .descrição {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.container .principal main .clientes ul .titulo {
-    font-weight: bold;
-    color: #7b7979;
 }
 

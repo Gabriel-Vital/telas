@@ -99,7 +99,6 @@ a i {
     width: 100%;
     height: 100%;
     padding-top: 85px;
-    padding-left: 45px;
     justify-content: end;
 }
 
@@ -187,7 +186,7 @@ a i {
 
 .container .principal main .conteudo {
     height: 100%;
-    padding-left: 15px;
+    padding-left: 30px;
     padding-right: 15px;
     display: flex;
     flex-direction: column;
@@ -228,12 +227,11 @@ a i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
+    gap: 35px;
     border: 1px solid #dedddd;
     background-color: white;
-    padding-inline: 40px;
+    padding-inline: 35px;
     border-radius: 5px;
-
 }
 
 .container .principal main .dados ul li i {
@@ -261,3 +259,66 @@ a i {
     color: #d71010;
 }
 
+.container .principal main table {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    width: 100%;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.container .principal main table p {
+    line-height: 0;
+}
+
+.container .principal main table thead tr th{
+    text-align: left;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: gray;
+    border-bottom: 1px solid #cccccc;
+}
+
+.container .principal main table tbody tr { 
+    background-color: white;
+}
+
+.container .principal main table tbody tr td .cliente-info {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-left: 20px;
+    padding: 10px;
+}
+
+.container .principal main table tbody tr td .cliente-info i {
+    background-color: #cccccc;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.container .principal main table tbody tr td .cliente-info .info p {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.container .principal main table tbody tr td .status {
+    border-radius: 50px;
+    width: fit-content;
+    padding: 6px;
+}
+
+#pago {
+    background-color: rgb(174, 251, 174);
+    color: rgb(0, 183, 0);
+}
+
+#cancelado {
+    background-color: rgb(248, 157, 157);
+    color: rgb(182, 0, 0);
+}
+
+#pendente {
+    background-color: rgb(249, 249, 181);
+    color: rgb(194, 194, 0);
+}

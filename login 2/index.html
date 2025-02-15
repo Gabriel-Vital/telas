@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tela de login 2</title>
 </head>
 <body>
     <div class="container">
@@ -21,10 +22,12 @@
                     <div class="campo">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email">
+                        <p class="text-[red] text-sm hidden">Email é obrigatório.</p>
                     </div>
                     <div class="campo">
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" id="senha">
+                        <p class="text-[red] text-sm hidden">Senha é obrigatório.</p>
                     </div>
                     <div class="links-ajuda">        
                         <div>
@@ -35,7 +38,7 @@
                     </div>
                 </div>
                 <div class="fim">
-                    <button>Entrar</button>
+                    <button onclick="login()">Entrar</button>
                     <div class="semconta">
                         <p>Não tem uma conta?</p>
                         <a href="">Cadastre-se</a>
@@ -44,5 +47,6 @@
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -169,7 +169,5 @@ body {
 } 
 
 .container .direita .formulario .plus button:hover {
-    background-color: #58af9c;
-    border: 1px solid transparent;
-    color: white;
+    background-color: #f1f1f1;
 }

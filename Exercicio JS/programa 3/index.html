@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Contador - Digital</title>
+</head>
+<body>
+    <main class="bg-black w-full h-screen flex flex-col justify-center items-center">
+        <section class="flex flex-col text-white bg-[#262626] w-[500px] p-[35px] space-y-13 rounded-xs">
+            <div class="flex justify-between items-center">
+                <button onclick="addCounter()" class="bg-black w-20 h-20 text-xl font-bold rounded-xs cursor-pointer">+</button>
+                <h1 id="counter" class="text-6xl font-bold">0</h1>
+                <button onclick="minusCounter()" class="bg-black w-20 h-20 text-xl font-bold rounded-xs cursor-pointer">-</button>
+            </div>
+            <div>
+                <button onclick="resetCounter()" class="bg-[#3730a2] w-full p-2 rounded-xs cursor-pointer">Reset</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

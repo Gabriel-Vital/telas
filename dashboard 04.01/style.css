@@ -98,14 +98,17 @@ a i {
     background-color: #f9fafb;
     width: 100%;
     height: 100%;
-    padding-top: 80px;
+    padding-top: 85px;
+    justify-content: end;
 }
 
 .container .principal aside {
     background-color: white;
     width: 20%;
     height: 100%;
-
+    position: fixed;
+    left: 0;
+    top: 85px;
 }
 
 .container .principal main {
@@ -113,14 +116,31 @@ a i {
     height: 100%;
 }
 
+.container .principal aside nav ul {
+    padding: 0;
+}
+
 .container .principal aside .menu button {
     width: 100%;
-    padding: 8px;
+    padding: 8px 20px;
     border: none;
     background-color: transparent;
     display: flex;
     gap: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.container .principal aside .menu button:hover {
     font-weight: bold;
+    background-color: #f6f5f5;
+}
+
+#ativo {
+    font-weight: bold;
+    border-left: 5px solid #cb49fa;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .container .principal aside nav ul .pages a .esquerda{
@@ -147,7 +167,7 @@ a i {
     background-color: #FDCB2F;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 20px;
@@ -160,9 +180,13 @@ a i {
     border: #FDCB2F 1px solid;
 }
 
+.container .principal main {
+    background-color: #f9f8f8;
+}
+
 .container .principal main .conteudo {
     height: 100%;
-    padding-left: 15px;
+    padding-left: 30px;
     padding-right: 15px;
     display: flex;
     flex-direction: column;
@@ -180,16 +204,21 @@ a i {
 }
 
 .container .principal main .git button {
-    background-color: tra;
-    border: none;
+    border: 1px solid transparent;
     color: white;
     border-radius: 10px;
     padding: 13px;
     background-color: transparent;
     font-weight: bold;
+    transition: all 0.1s ease;
+}
+
+.container .principal main .git button:hover {
+    border: 1px solid white;
 }
 
 .container .principal main .dados ul {
+    padding: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -197,11 +226,11 @@ a i {
 .container .principal main .dados ul li {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 35px;
     border: 1px solid #dedddd;
     background-color: white;
-    padding-inline: 13px;
+    padding-inline: 35px;
     border-radius: 5px;
 }
 
@@ -230,49 +259,66 @@ a i {
     color: #d71010;
 }
 
-.container .principal main .clientes ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.container .principal main .clientes ul li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #dedddd;
-    padding: 5px;
-    padding-right: 100px;
+.container .principal main table {
+    border: 1px solid #cccccc;
     border-radius: 10px;
-    padding-left: 10px;
+    width: 100%;
+    border-spacing: 0;
+    overflow: hidden;
 }
 
-.container .principal main .clientes ul li .clientes {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.container .principal main table p {
+    line-height: 0;
 }
 
-.container .principal main .clientes ul li .clientes i {
-    border-radius: 50%;
+.container .principal main table thead tr th{
+    text-align: left;
     padding: 10px;
-    background-color: #c8c6c6;
+    background-color: #f0f0f0;
+    color: gray;
+    border-bottom: 1px solid #cccccc;
 }
 
-.container .principal main .clientes ul li .clientes .user {
+.container .principal main table tbody tr { 
+    background-color: white;
+}
+
+.container .principal main table tbody tr td .cliente-info {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 25px;
+    align-items: center;
+    padding-left: 20px;
+    padding: 10px;
 }
 
-.container .principal main .clientes ul li .descrição {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+.container .principal main table tbody tr td .cliente-info i {
+    background-color: #cccccc;
+    padding: 10px;
+    border-radius: 50%;
 }
 
-.container .principal main .clientes ul .titulo {
-    font-weight: bold;
-    color: #7b7979;
+.container .principal main table tbody tr td .cliente-info .info p {
+    font-size: 11px;
+    font-style: italic;
 }
 
+.container .principal main table tbody tr td .status {
+    border-radius: 50px;
+    width: fit-content;
+    padding: 6px;
+}
+
+#pago {
+    background-color: rgb(174, 251, 174);
+    color: rgb(0, 183, 0);
+}
+
+#cancelado {
+    background-color: rgb(248, 157, 157);
+    color: rgb(182, 0, 0);
+}
+
+#pendente {
+    background-color: rgb(249, 249, 181);
+    color: rgb(194, 194, 0);
+}

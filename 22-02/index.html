@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-700 p-6">
+    <div class="bg-white">
+      <div id="container-title" class="flex items-center gap-2 mb-6">
+        <div
+          class="bg-black text-white w-8 h-8 flex justify-center items-center rounded-full"
+        >
+          1
+        </div>
+        <h2>Dados do seu Nu Cartão</h2>
+      </div>
+
+      <div id="container-form" class="flex flex-col gap-2">
+        <label for="nome">Nome (conforme o que esta no cartão):</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          class="w-full p-2 border rounded"
+          placeholder="Digite o seu nome"
+        />
+
+        <label for="nome">Número do cartão:</label>
+        <input
+          type="number"
+          name="nome"
+          id="cartão"
+          class="w-full p-2 border rounded"
+          placeholder="Digite o número do cartão"
+        />
+
+        <div class="flex flex-row gap-2">
+          <div class="flex flex-row gap-2 w-full">
+            <label for="mes">Mês</label>
+            <input
+              type="number"
+              name="mes"
+              id="mes"
+              class="w-full p-2 border rounded"
+              placeholder="Digite o número do cartão"
+            />
+          </div>
+          <div class="flex flex-row gap-2 w-full">
+            <label for="mes">Ano:</label>
+            <input
+              type="number"
+              name="ano"
+              id="ano"
+              class="w-full p-2 border rounded"
+              placeholder="Digite o número do cartão"
+            />
+          </div>
+          <div class="flex flex-row gap-2 w-full">
+            <label for="mes">CCV</label>
+            <input
+              type="number"
+              name="ccv"
+              id="ccv"
+              class="w-full p-2 border rounded"
+              placeholder="Digite o número do cartão"
+            />
+          </div>
+        </div>
+        <div class="grid grid-col-2 gap-2">
+          <div class="flex flex-col gap-2 w-full">
+            <label for="bandeira">Bandeira:</label>
+            <select
+              name="bandeira"
+              id="bandeira"
+              class="w-full p-2 border rounded"
+            >
+              <option value="mastercard">Mastercard</option>
+              <option value="visa">Visa</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-2 w-full">
+            <label for="parcelas">Parcelas:</label>
+            <select name="parcelas" id="parcelas">
+              <option value="1x">parcela 1x (Á vista)</option>
+              <option value="2x">parcela 2x</option>
+              <option value="3x">parcela 3x</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

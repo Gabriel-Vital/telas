@@ -40,13 +40,12 @@
 //     console.log(`Meu item é ${item} e meu índice é ${indice}`)
 // })
 
-
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 // estrutura condicional
 // estrutura if: if (condição) {
 //
 // }
-// exemplo: 
+// exemplo:
 // let idade = 25;
 
 // if (idade >= 18) {
@@ -64,7 +63,7 @@
 
 // console.log("A média do(a) " + aluno + " foi de: " + media);
 
-// exercicio 2  calcular area de um retângulo: 
+// exercicio 2  calcular area de um retângulo:
 // largura = 10
 // altura = 20
 
@@ -77,7 +76,7 @@
 
 // =====================================================================================
 
-// laços de repetição: basicamente um loop para ficar um código mais legivel e dinâmico. 
+// laços de repetição: basicamente um loop para ficar um código mais legivel e dinâmico.
 // EX:
 // for (let i = 1; i <= 10; i++) {
 //     console.log(i);
@@ -105,7 +104,7 @@
 
 // console.log("Parabéns, você acertou o número secreto!")
 
-// Do... While: usa pelo menos uma vez 
+// Do... While: usa pelo menos uma vez
 
 // let i = 1;
 // do {
@@ -124,7 +123,7 @@
 // =====================================================================================
 
 // Array:
-// trocar item da lista conforme índice: 
+// trocar item da lista conforme índice:
 // const lista = ["maça", "banana", "laranja", "manga", "morango"];
 
 // lista[1] = "uva";
@@ -156,12 +155,12 @@
 // lista.shift();
 // console.log(lista);
 
-// lista.unshift("melancia"); 
+// lista.unshift("melancia");
 // console.log(lista)
 
 // ==
 
-// encontrar o index de um array: 
+// encontrar o index de um array:
 // const lista = ["maça", "banana", "laranja", "manga", "morango"];
 
 // console.log(lista.indexOf("banana"));
@@ -172,3 +171,49 @@
 // const lista = ["maça", "banana", "laranja", "manga", "morango"];
 
 // console.log(lista.includes("morango"));
+
+// ==
+// mapeando os elementos da lista
+// const lista = ["maça", "banana", "laranja", "manga", "morango"];
+// const mapLista = lista.map((fruta, indice) => {
+//   return fruta + " tem o indice " + indice;
+// })
+
+// console.log(mapLista)
+
+// ==
+
+// copia e retorna uma parte do array:
+// const lista = ["maça", "banana", "laranja", "manga", "morango"];
+
+// // slice tem que terminar um numero depois do indice do elemento
+
+// let lista2 = lista.slice(0, 3);
+// console.log(lista2);
+
+// ==
+
+// Juntando elementos da lista:
+
+// const lista = ["maça", "banana", "laranja", "manga", "morango"];
+
+// let listaJunta = lista.join(" / ")
+// console.log(listaJunta)
+
+// ==
+
+// revertendo a lista:
+
+// const lista = ["maça", "banana", "laranja", "manga", "morango"];
+// console.log(lista)
+// const listainvertida = lista.reverse();
+// console.log(listainvertida)
+
+// ==
+
+// concatenar 2 ou mais listas: 
+// const lista = ["maça", "banana", "laranja", "manga", "morango"];
+// const lista2 = ["Manga", "Uva", "Melancia"];
+
+// let listaComplet = lista.concat(lista2)
+// console.log(listaComplet)

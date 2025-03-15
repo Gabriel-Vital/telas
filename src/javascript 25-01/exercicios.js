@@ -158,7 +158,7 @@
 // lista.unshift("melancia");
 // console.log(lista)
 
-// ==
+// =====================================================
 
 // encontrar o index de um array:
 // const lista = ["maça", "banana", "laranja", "manga", "morango"];
@@ -182,6 +182,47 @@
 // console.log(mapLista)
 
 // ==
+
+// filtrando elementos
+// const lista = ["maça", "banana", "laranja", "manga", "morango"];
+
+// // filtrar acima de 4 caracteres
+
+// const filterFruits = lista.filter((fruta) => {
+//   return fruta.length > 4;
+// });
+// console.log(filterFruits)
+
+// ==
+
+// Find (encontrar um elemento no array)
+// encontrar uma fruta que comece com a letra "a"
+// const lista = [
+//   "maça",
+//   "banana",
+//   "laranja",
+//   "manga",
+//   "morango",
+//   "abacaxi",
+//   "amora",
+// ];
+// const findFruit = lista.find((fruit) => {
+//   return fruit[0] === "a";
+// });
+// console.log(findFruit);
+
+// ==
+// reduce (reduzir o array a um unico valor)
+// const pagamentos = [4000, 2000, 7000, 3735];
+
+// // somar elementos
+// const totalPagamentos = pagamentos.reduce((acumulador, atual) => {
+//   return acumulador + atual
+// }, 0)
+// console.log(totalPagamentos)
+// ==
+
+// ========================================
 
 // copia e retorna uma parte do array:
 // const lista = ["maça", "banana", "laranja", "manga", "morango"];
@@ -211,9 +252,47 @@
 
 // ==
 
-// concatenar 2 ou mais listas: 
+// concatenar 2 ou mais listas:
 // const lista = ["maça", "banana", "laranja", "manga", "morango"];
 // const lista2 = ["Manga", "Uva", "Melancia"];
 
 // let listaComplet = lista.concat(lista2)
 // console.log(listaComplet)
+
+// Exercicios
+// 1. Crie uma lista com 5 nomes dos alunos da turma e adicione um novo aluno no final da lista.
+// const alunos = ["Daniel", "Menires", "Ana", "Bruno", "Andre"];
+
+// alunos.push("Gabriel");
+
+// console.log(alunos);
+
+// // 2. Remova o último aluno da lista.
+
+// alunos.pop();
+// console.log(alunos);
+
+// // 3. Crie uma lista com numeros acima de 10
+
+// const numeros2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+// const filternumeros = numeros2.filter((num) => {
+//   return num > 10;
+// });
+
+// console.log(filternumeros);
+
+// // 4. some os numeros da lista acima
+
+// const somanumeros = numeros2.reduce((acumulador, total) => {
+//   return acumulador + total;
+// }, 0);
+
+// console.log(somanumeros);
+
+// // 5. use o metodo map para dobra os valores da lista de numeros acima
+
+// const dobrarnumeros = numeros2.map((num) => {
+//   return num * 2;
+// });
+
+// console.log(dobrarnumeros);
